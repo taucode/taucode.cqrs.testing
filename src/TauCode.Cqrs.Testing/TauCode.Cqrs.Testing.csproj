@@ -7,6 +7,7 @@
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="TauCode.Cqrs" Version="1.0.0-dev-2019-12-22-00-45" />
+    <PackageReference Include="TauCode.Extensions" Version="1.0.0-dev-2020-01-06-13-06" />
   </ItemGroup>
 
 </Project>
