@@ -146,5 +146,63 @@ namespace TauCode.Cqrs.Testing
 
             return domainName;
         }
+
+        public static string SubstituteCode(this string code, bool lowerCase = true)
+        {
+            if (code == null)
+            {
+                throw new ArgumentNullException(nameof(code));
+            }
+
+            var c = lowerCase ? 'a' : 'A';
+
+            if (code.StartsWith("$"))
+            {
+                var len = code.Substring(1).ToInt32();
+                var sb = new StringBuilder();
+
+                var times = len;
+
+                for (var i = 0; i < times; i++)
+                {
+                    sb.Append(c);
+                }
+
+                code = sb.ToString();
+            }
+
+            return code;
+        }
+
+        public static string SubstituteName(this string name)
+        {
+            if (name == null)
+            {
+                throw new ArgumentNullException(nameof(name));
+            }
+
+            if (name.StartsWith("$"))
+            {
+                var len = name.Substring(1).ToInt32();
+                var sb = new StringBuilder();
+
+                var times = len;
+
+                for (var i = 0; i < times; i++)
+                {
+                    var c = 'a';
+                    if (i == 0)
+                    {
+                        c = 'A';
+                    }
+
+                    sb.Append(c);
+                }
+
+                name = sb.ToString();
+            }
+
+            return name;
+        }
     }
 }
