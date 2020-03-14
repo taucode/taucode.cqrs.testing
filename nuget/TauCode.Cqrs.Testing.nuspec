@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>TauCode.Cqrs.Testing</id>
-    <version>1.0.0.0-dev-2020-02-15-21-46</version>
+    <version>1.0.0.0-dev-2020-03-14-22-07</version>
     <authors>TauCode</authors>
     <owners>TauCode</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,9 +10,9 @@
     <projectUrl>https://github.com/taucode/taucode.cqrs.testing</projectUrl>
     <description>Testing library for CQRS features</description>
     <releaseNotes>
-      Moving to nuget.org
+      Migrating to Azure DevOps.
     </releaseNotes>
-    <tags>taucode cqrs</tags>
+    <tags>taucode cqrs testing</tags>
     <dependencies>
       <dependency id="NUnit" version="3.12.0" />
       <dependency id="TauCode.Cqrs" version="1.0.0-dev-2019-12-22-00-45" />
