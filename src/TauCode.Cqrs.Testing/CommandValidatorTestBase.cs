@@ -1,8 +1,8 @@
-﻿using System;
-using FluentValidation;
+﻿using FluentValidation;
 using FluentValidation.Results;
 using NUnit.Framework;
-using TauCode.Cqrs.Commands;
+using System;
+using TauCode.Cqrs.Abstractions;
 
 namespace TauCode.Cqrs.Testing
 {

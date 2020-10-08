@@ -2,7 +2,7 @@
 using FluentValidation.Results;
 using NUnit.Framework;
 using System;
-using TauCode.Cqrs.Queries;
+using TauCode.Cqrs.Abstractions;
 
 namespace TauCode.Cqrs.Testing
 {
