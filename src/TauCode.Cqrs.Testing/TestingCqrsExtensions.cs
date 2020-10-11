@@ -1,9 +1,9 @@
 ﻿using FluentValidation.Results;
 using NUnit.Framework;
 using System;
+using System.Globalization;
 using System.Text;
 using TauCode.Domain.Identities;
-using TauCode.Extensions;
 
 namespace TauCode.Cqrs.Testing
 {
@@ -204,5 +204,7 @@ namespace TauCode.Cqrs.Testing
 
             return name;
         }
+
+        internal static int ToInt32(this string s) => int.Parse(s, CultureInfo.InvariantCulture);
     }
 }
